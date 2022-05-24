@@ -96,8 +96,50 @@ a:hover{
     justify-content: center;
     display: flex;
     text-decoration: none;
-    color: rgba(0, 0, 247, 0.993);
+    color: rgba(221, 0, 0, 0.897);
     font-size: 18px;
     font-weight: bold;
     margin: 30px 0;
+}
+
+/*CSS novidades*/
+
+.novidades .text-body{
+    width: 80%;
+    margin: 70px auto;
+}
+.novidades h2{
+    color: rgb(10, 10, 10);
+    font-size: 26px;
+    width: 70%;
+}
+.novidades p{
+    color: black;
+}
+.novidades a{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    padding: 6px 12px;
+    background-color: rgb(7, 44, 252);
+    font-weight: 400;
+}
+
+/*CSS Galeria*/
+
+.galeria{
+    margin: 60px auto 20px;
+}
+.galeria h2{
+    text-align: center;
+    font-size: 24px;
+}
+.galeria p{
+    text-align: center;
+    width: 50%;
+    margin: 14 px auto 50px;
+}
+.galeria .gallery{
+    width: 30%;
+    margin: 14px auto 50px;
 }
