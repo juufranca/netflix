@@ -18,24 +18,24 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #e7e7e7;
+    background: #f8f8f8;
 }
 #menu{
     display: flex;
     list-style: none;
     gap: 0.5rem;
 }
-#bnt-mobile{
+#btn-mobile{
     display: none;
 }
 #carouselExampleInterval{
     position: relative;
     z-index: 10;
-    padding-top: 20px;
 }
 /*Começo da responsivida Menu Hamburguer*/
-@media (max-widht: 600px) {
-    #menu{
+/* Começo da responsividade Menu Hamburger*/
+@media (max-width: 600px) {
+    #menu {
         display: block;
         position: absolute;
         width: 15em;
@@ -47,53 +47,54 @@ a:hover{
         height: 0px;
         padding-left: 5px;
         visibility: hidden;
-        overflow: hidden;
+        overflow-y: hidden;
     }
-    #menu li{
+    #menu li {
         padding-top: 30px;
         padding-bottom: 0px;
         margin: 0 1rem;
-        border-bottom: 2px solid snow;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
     }
-    #nav.active #menu{
-    height: calc(100vh - 70px);
-    visibility: visible;
-    overflow-y: hidden;
-}
-    #btn-mobile{
-    display: flex;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border: 1px solid red;
-    border: none;
-    background: none;
-    cursor: pointer;
-    gap: 0.5rem;
-}
-    #hamburguer{
-        border-top: 2px;
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: hidden;
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+    #hamburger {
+        border-top: 2px solid;
         width: 25px;
-}
-    #hamburguer::after,
-    #hamburguer::before{
+        
+    }
+    #hamburger::after,
+    #hamburger::before {
         content: '';
         display: block;
         width: 25px;
         height: 2px;
         background: currentColor;
         margin-top: 5px;
-        transition: 0,3s;
+        transition: 0.3s;
         position: relative;
-}
-    #nav.active #hamburguer{
+    }
+    #nav.active #hamburger {
         border-top-color: transparent;
-}
-    #nav.actives #hamburguer::before{
+    }
+    #nav.active #hamburger::before {
         transform: rotate(135deg);
-}
-    #nav.actives #hamburguer::after{
+    }
+    #nav.active #hamburger::after {
         transform: rotate(-135deg);
         top: -7px;
+    }
 }
 
 
