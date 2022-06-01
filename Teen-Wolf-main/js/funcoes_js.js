@@ -1,4 +1,4 @@
-var nome = 'Juliana'             //String
+/*var nome = 'Juliana'             //String
 var idade = 27                   //int
 var semdefinicao                 //undefined
 var nula = null                  //objeto (?!)
@@ -26,3 +26,5 @@ var var1 = 3                 //atribui 3 a variavel var1
 3 == '3'                     //true
 3 === var1                   //true
 3 === '3'                    //false
+
+*/
