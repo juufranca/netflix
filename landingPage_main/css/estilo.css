@@ -18,8 +18,8 @@ body {
 
 header {
     z-index: 1;
-    background-color: rgb(142, 0, 170);
-    height: 80px;
+    background-color: rgb(0, 0, 0);
+    height: 55px;
     position: fixed;
     width: 100vw;
 }
@@ -56,6 +56,11 @@ header {
     text-shadow: 4px 4px 6px #780083;
 }
 
+.whatsapp{
+    height: 20px;
+    position: fixed;
+}
+
 .botao {
     background-color: rgb(0, 0, 0);
     height: 45px;
@@ -80,7 +85,7 @@ header {
 }
 
 .banner{
-    background-image: url(../img/imagem-fundo-banner.jpg);
+    background-image: url(../img/castelo.jpg);
     height: 768px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,7 +116,7 @@ h1 {
 
 .titulo-senai {
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(229, 255, 0);
+    color: rgb(255, 241, 50);
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 600;
@@ -168,7 +173,7 @@ h1 {
 }
 
 .info {
-    background-image:  url(../img/imagem-fundo-info.jpg);
+    background-image:  url(../img/baixados.jpg);
     background-repeat: no-repeat; background-position: center;
     background-size: cover;
     padding: 40px 0;
@@ -192,21 +197,21 @@ h1 {
 }
 
 .card-info p {
-    color: rgb(0, 255, 115);
-    font-size: 22px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
     font-weight: 600;
     border: solid 2px #A259F7;
-    width: 250px;
+    width: 350px;
     padding: 30px 0;
     text-align: center;
 }
 
-.endereco {
+.testes {
     padding: 40px 0;
     background-image: url(../img/imagem-fundo-ranking.jpg);
 }
 
-.conteudo-endereco {
+.conteudo-testes {
     margin: 0 auto;
     max-width: 850px;
     position: relative;
@@ -220,16 +225,17 @@ h1 {
 }
 
 .texto-endereco {
-    color: #06ff06;
+    color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
     background-color: #000000;
-    border: solid 2px #81b94d;
-    padding: 55px 55px;
+    border: solid 2px #ff0000;
+    padding: 50px 50px;
 }
 
 .texto-endereco p {
-    width: 400px;
+    width: 100%;
     font-size: 20px;
+    text-align: center;
 }
 
 .container-mapa{
