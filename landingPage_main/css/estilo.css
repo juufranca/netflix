@@ -53,12 +53,19 @@ header {
 .menu header a:hover:not(.botao) {
     font-size: 1.6em;
     transition: 0.3s;
-    text-shadow: 4px 4px 6px #780083;
+    text-shadow: 4px 4px 6px #ea00ff;
 }
 
 .whatsapp{
-    height: 20px;
     position: fixed;
+    z-index: 2;
+    bottom: 50px;
+    right: 40px;
+
+}
+
+.whatsapp img{
+    height: 50px;
 }
 
 .botao {
@@ -93,7 +100,7 @@ header {
 
 .conteudo-banner {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     height: 100%;
 }
 
@@ -101,8 +108,10 @@ header {
 .texto-banner {
     display: flex;
     flex-direction: column;
-    height: 60%;
+    height: 40%;
+    bottom: 100px;                      
     justify-content: space-around;
+    transform: translateY(150px);
 }
 
 h1 {
@@ -111,12 +120,12 @@ h1 {
 }
 
 .linha-amarela {
-    border: solid 1px #ffc118;
+    border: solid 1px #ff0000;
 }
 
 .titulo-senai {
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(255, 241, 50);
+    color: rgb(255, 255, 255);
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 600;
@@ -128,7 +137,7 @@ h1 {
 
 .sobre-projetos {
     background-color: #ffffff;
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 40px;
 }
 
@@ -200,7 +209,7 @@ h1 {
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 600;
-    border: solid 2px #A259F7;
+    border: solid 2px #ff0000;
     width: 350px;
     padding: 30px 0;
     text-align: center;
@@ -257,6 +266,7 @@ h1 {
     position: relative;
     overflow: hidden;
     width: 100%;
+    border: solid 2px #ffc118;
 }
 
 .video-responsivo{
@@ -270,8 +280,8 @@ h1 {
 }
 .footer {
    height: 80px;
-   border-color: rgb(247, 0, 115);
-   background-color: #ffffff;
+   
+   background-color: #000000;
    display: flex;
    top: 0px;
    justify-content: center;
@@ -279,6 +289,7 @@ h1 {
 
 .footer-span {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
     height: 100%;
     width: 90%;
     display: flex;
@@ -286,3 +297,79 @@ h1 {
     align-items: center;  
  }
 
+ @media screen and (max-width: 1200px){
+    .menu-header{
+        width: 60%;
+    }
+    
+    .conteudo-sobre{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .imagem-sobre{
+        width: 80%;
+    }
+    
+    .texto-sobre{
+        width: 80%;
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        height: 430px;
+        justify-content: space-between;
+    }
+    
+    .conteudo-info{
+        align-items: center;
+    }
+    
+    .conteudo-endereco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 660px;
+        justify-content: space-between;
+    }
+    
+    .conteudo-endereco h2{
+        align-self: flex-start;
+    }
+    
+    .texto-endereco p{
+        width: 100%;
+    }
+    
+    .container-mapa{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+    .mapa-responsivo {
+        position: relative;
+        margin-top: 10px;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .container-video{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        border: solid 2px #ffc118;
+        padding-top: 20%;
+    }
+    
+    .video-responsivo{
+        position: relative;
+        margin-top: 10px;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+ }
