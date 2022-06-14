@@ -266,7 +266,7 @@ h1 {
     position: relative;
     overflow: hidden;
     width: 100%;
-    border: solid 2px #ffc118;
+    padding-bottom: 100px;
 }
 
 .video-responsivo{
@@ -280,7 +280,6 @@ h1 {
 }
 .footer {
    height: 80px;
-   
    background-color: #000000;
    display: flex;
    top: 0px;
@@ -359,7 +358,6 @@ h1 {
         position: relative;
         overflow: hidden;
         width: 100%;
-        border: solid 2px #ffc118;
         padding-top: 20%;
     }
     
